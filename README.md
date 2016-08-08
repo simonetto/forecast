@@ -5,7 +5,7 @@ A simple weather forecast using Angular 1.5 and ES6
 ## Installation
 
 ```
-$ git clone git@
+$ git clone git@github.com:simonetto/forecast.git
 $ npm install
 ```
 
