@@ -1,0 +1,19 @@
+<section>
+  <div id="selectors-wrapper">
+      <select ng-options="city.name for city in landing.model.cities track by city.id"
+          ng-change="landing.onCityChange()" class="custom-select"
+          ng-model="landing.model.selectedCity"></select>
+
+        <select ng-options="date for date in landing.model.dates"
+            ng-change="landing.onDateChange()" class="custom-select"
+            ng-model="landing.model.selectedDate">
+          </select>
+  </div>
+
+  <div id="forecast-wrapper">
+    <daily-forecast ng-repeat="forecast in landing.model.forecastByDate" forecast="forecast"></daily-forecast>
+  </div>
+
+
+  <img  ng-src="{{landing.model.selectedCity.image}}" id="city-img" >
+</section>
