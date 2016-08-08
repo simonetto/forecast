@@ -33,6 +33,7 @@ $ npm run build
 * Improve the CSS to better handle different screen resolutions
 * Improve the CSS with no hardcoded colors, etc
 * Improve tests coverage
+* Clean the project to removed unused dependencies
 
 ## Possible improvements
 
